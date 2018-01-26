@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
+import { SearchModule } from './search/search.module';
 
 
 import { AppComponent } from './app.component';
@@ -19,11 +20,14 @@ import { MovierowComponent } from './shared/movierow.component';
     MoviesComponent,
     MovierowComponent,
 
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    SearchModule  
+    
   ],
   providers: [
     MoviesService
