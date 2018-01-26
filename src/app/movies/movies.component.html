@@ -1,3 +1,5 @@
-<a [routerLink]="['/movies', movie.id]">
-  {{ movie.id }} {{ movie.name }}
-</a>
+<div class="container">
+ <hr>   
+    <app-movierow *ngFor="let movie of movies" [movieList]="movie">
+    </app-movierow>
+</div>

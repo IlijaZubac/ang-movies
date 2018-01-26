@@ -24,7 +24,6 @@ export class MoviesService {
     public getMovies()
   {
     return new Observable((o: Observer<any>) => {
-   
         o.next(this.movieList);
         return o.complete();
       });

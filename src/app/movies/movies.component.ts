@@ -8,13 +8,17 @@ import { MoviesService } from '../shared/movies.service';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  movie;
+
+  movies;
   constructor(private moviesService: MoviesService) { }
 
   ngOnInit() {
     this.moviesService.getMovies().subscribe(
-      data => {this.movie = data;}
-    )
+      data => {
+        this.movies = data; 
+      }
+    );
+    
   }
 
 }

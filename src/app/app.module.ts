@@ -8,6 +8,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { MoviesComponent } from './movies/movies.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MoviesService } from './shared/movies.service';
+import { MovierowComponent } from './shared/movierow.component';
 
 
 
@@ -16,6 +17,7 @@ import { MoviesService } from './shared/movies.service';
     AppComponent,
     LayoutComponent,
     MoviesComponent,
+    MovierowComponent,
 
   ],
   imports: [
