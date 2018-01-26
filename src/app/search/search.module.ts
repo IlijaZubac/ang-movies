@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchComponent } from './search.component';
 import { FormsModule } from '@angular/forms';
+import { SearchpageComponent } from '../searchpage/searchpage.component';
 
 @NgModule({
 
@@ -12,10 +13,12 @@ import { FormsModule } from '@angular/forms';
   ],
 
   declarations: [
-    SearchComponent
+    SearchComponent,
+    SearchpageComponent
   ],
   exports: [
-    SearchComponent
+    SearchComponent,
+    SearchpageComponent
   ]
 
 })

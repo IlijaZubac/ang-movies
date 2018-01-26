@@ -17,7 +17,6 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
   }
-
   
     searchMovie(term) {
     this.router.navigate(['/search', this.searchName]);

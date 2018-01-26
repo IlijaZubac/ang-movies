@@ -29,5 +29,17 @@ export class MoviesService {
       });
   }
 
-
+  
+    searchMovie(term) : Observable<Movie[]> {
+        const foundMovies = this.movieList.filter((movie: Movie) => {
+            return movie.name.toLocaleLowerCase().includes(term.toLocaleLowerCase());
+        });
+    
+       if (foundMovies.length === 0) {
+            return Observable.throw(term);
+        }
+        return Observable.of(foundMovies);
+      } 
   }
+
+  

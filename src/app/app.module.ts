@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MoviesService } from './shared/movies.service';
 import { MovierowComponent } from './shared/movierow.component';
 import { FormsModule } from '@angular/forms';
+import { SearchpageComponent } from './searchpage/searchpage.component';
 
 
 
@@ -20,8 +21,7 @@ import { FormsModule } from '@angular/forms';
     LayoutComponent,
     MoviesComponent,
     MovierowComponent,
-
-
+  
   ],
   imports: [
     BrowserModule,
