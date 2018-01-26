@@ -10,6 +10,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MoviesService } from './shared/movies.service';
 import { MovierowComponent } from './shared/movierow.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -26,7 +27,8 @@ import { MovierowComponent } from './shared/movierow.component';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    SearchModule  
+    SearchModule,
+    FormsModule
     
   ],
   providers: [
